@@ -1,0 +1,39 @@
+// Sprite sheet : toutes les images sont dans img/sprite.jpg
+// Ligne 1 et 2 : les 12 affiches (6 par ligne)
+// Ligne 3 : les 5 icônes du menu
+
+@mixin sprite($x, $y) {
+    background-image: url("../img/sprite.jpg");
+    background-repeat: no-repeat;
+    background-position: $x $y;
+}
+
+// Affiches
+.affiche {
+    background-size: 600% 233.33%;
+}
+
+.supernatural { @include sprite(0%, 0%); }
+.badlands     { @include sprite(20%, 0%); }
+.spiderman1   { @include sprite(40%, 0%); }
+.spiderman2   { @include sprite(60%, 0%); }
+.spiderman3   { @include sprite(80%, 0%); }
+.endgame      { @include sprite(100%, 0%); }
+
+.civilwar     { @include sprite(0%, 75%); }
+.conjuring1   { @include sprite(20%, 75%); }
+.conjuring2   { @include sprite(40%, 75%); }
+.aladdin      { @include sprite(60%, 75%); }
+.badboys1     { @include sprite(80%, 75%); }
+.badboys2     { @include sprite(100%, 75%); }
+
+// Icônes du menu
+.icone {
+    background-size: 1200% 700%;
+}
+
+.icone-pellicule { @include sprite(0%, 100%); }
+.icone-clap      { @include sprite(9.09%, 100%); }
+.icone-etoile    { @include sprite(18.18%, 100%); }
+.icone-tele      { @include sprite(27.27%, 100%); }
+.icone-ticket    { @include sprite(36.36%, 100%); }
