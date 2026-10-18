@@ -1,0 +1,14 @@
+{
+  "name": "pwd-tp1",
+  "version": "1.0.0",
+  "description": "TP1 PWD - Mes 12 films et séries préférés",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss/style.scss css/style.min.css --style=compressed --no-source-map --silence-deprecation=import,global-builtin,color-functions",
+    "watch:css": "sass scss/style.scss css/style.min.css --style=compressed --no-source-map --watch --silence-deprecation=import,global-builtin,color-functions"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.80.0"
+  }
+}
